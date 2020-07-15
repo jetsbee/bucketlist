@@ -28,9 +28,9 @@
     "webpack-cli": "^3.3.12"
   },
   "scripts": {
-    "build": "yarn run clean && webpack --mode production",
+    "build": "yarn run clean && webpack --config ./webpack/webpack.config.js --mode production",
     "clean": "rm -rf dist",
-    "watch": "webpack --mode development --watch"
+    "watch": "webpack --config ./webpack/webpack.config.js --mode development --watch "
   },
   "browserslist": [
     "> 0.25%",
