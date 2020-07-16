@@ -25,9 +25,11 @@
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
+    "start": "webpack-dev-server --config ./webpack/webpack.config.js --progress",
     "build": "yarn run clean && webpack --config ./webpack/webpack.config.js --mode production",
     "clean": "rm -rf dist",
     "watch": "webpack --config ./webpack/webpack.config.js --mode development --watch "
