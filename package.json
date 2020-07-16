@@ -29,7 +29,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack/webpack.config.js --progress",
+    "start": "webpack-dev-server --config ./webpack/webpack.config.js --mode development --progress",
     "build": "yarn run clean && webpack --config ./webpack/webpack.config.js --mode production",
     "clean": "rm -rf dist",
     "watch": "webpack --config ./webpack/webpack.config.js --mode development --watch "
