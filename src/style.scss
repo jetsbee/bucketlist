@@ -1,3 +1,9 @@
-.hello {
-  color: red;
+li {
+  &.checked {
+    text-decoration: line-through;
+  }
+  
+  >p {
+    display: inline;
+  }
 }
